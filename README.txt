@@ -2,6 +2,9 @@ MultistompMidi
 by Philip Hugo
 
 This was my first real project in Python, so go easy on me. Hey, as long as it works!
+Check it out in action here:
+https://www.youtube.com/watch?v=W0LHTxjAvKs
+
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~CONTENTS / CODE MODULES~~~~~~~~~~~~~~~~~~~~~
 msmidi_fx_edit.py:
@@ -19,7 +22,7 @@ The folder "exp_stuff" contains the modules needed to control the Multistomp wit
 
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~HOW TO GET IT TO WORK~~~~~~~~~~~~~~~~~~~~~~~
-The code at hand was written for the MS 70 CDR. It will most likely also work on the MS 50G, although you will have to adapt the code as described in Midi Spec #1 by replacing the "0x61" with "0x58" in the code. (This could be automated using the identity request SysEx message, but I was to lazy to automate this)
+The code at hand was written for the MS 70 CDR. It will most likely also work on the MS 50G, although you will have to adapt the code as described in Midi Spec #1 by replacing the "0x61" with "0x58" in the code. (This could be automated using the identity request SysEx message, but I was too lazy)
 
 Hardwarewise you need a Raspberry Pi and a USB cable to connect to the Multistomp. I used the RPi 4 and Zero models, but it will likely work on older models as well.
 
@@ -27,7 +30,7 @@ You'll also need to set up Mido. I used the following guide.
 https://ixdlab.itu.dk/wp-content/uploads/sites/17/2017/10/Setting-Up-Raspberry-Pi-for-MIDI.pdf
 Make sure you see 'ZOOM MS Series MIDI 1' listed when you type 'amidi -l' into the terminal while the Multistomp is connected. Then you should be fine.
 
-Lastly you'll of course need to call the functions in msmidi_fx_edit.py with your own code.
+Lastly, you'll of course need to call the functions in msmidi_fx_edit.py with your own code.
 
 If you really need to use and expression pedal with the Multistomp, you will need to read the values from an expression pedal first. They mostly contain 10K pots that you connect to with a TRS cable. On the Raspberry Pi, you will need to read analog inputs. I recommend the following guide from which I pretty much bluntly copied the code from: 
 https://learn.adafruit.com/reading-a-analog-in-and-controlling-audio-volume-with-the-raspberry-pi?view=all
