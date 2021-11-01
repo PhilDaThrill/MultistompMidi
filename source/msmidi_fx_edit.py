@@ -92,3 +92,5 @@ def leave_editor_mode():
 def wrap_up():
     leave_editor_mode()
     print("Done.")
+
+#set_tap_tempo(127) #simple example
