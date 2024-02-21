@@ -1,7 +1,8 @@
 MultistompMidi
 by Philip Hugo
  
-This was my first real project in Python, so go easy on me. Hey, as long as it works!
+This repository can help add useful functionalities such as external effect switching to the Zoom Multistomp guitar effects pedal.
+
 Check it out in action here:
 https://www.youtube.com/watch?v=W0LHTxjAvKs
  
